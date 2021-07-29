@@ -25,7 +25,7 @@ jobs:
         pip install eden-simulator
     - name: Run EDEN examples directly
       run: |
-        cd NeuroML
+        cd NeuroML2
         python run_eden_izh.py
     - name: Install OMV
       run: |
