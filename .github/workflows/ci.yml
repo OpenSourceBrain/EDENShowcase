@@ -20,11 +20,19 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version:  ${{ matrix.python-version }}
+    - name: Install EDEN
+      run: |
+        pip install eden-simulator
+    - name: Run EDEN examples directly
+      run: |
+        cd NeuroML
+        python run_eden_izh.py
     - name: Install OMV
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
     - name: Run OMV tests
       run: |
+        pwd
         omv all -V
     - name: Print final OMV/engine version info
       run: |
