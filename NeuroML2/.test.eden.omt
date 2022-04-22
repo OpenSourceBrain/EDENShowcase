@@ -1,2 +1,15 @@
 target: run_eden.py
 engine: EDEN
+mep: .test.2007.mep
+experiments:
+  RS2007_100:
+    observables:
+      spike times:
+        file:
+          path: RS_One.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 5.317599532243251e-05
