@@ -1,3 +1,7 @@
 /NeuroML2/*dat
 *code.gen.c
 *code.gen.so
+*_eden.py
+*.mod
+x86_64
+*_nrn.py
