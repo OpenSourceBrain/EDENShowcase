@@ -11,3 +11,5 @@ print(
 )
 
 results = eden_simulator.runEden(filename)
+
+print("Completed simulation in EDEN, saved results: %s"%(results.keys()))

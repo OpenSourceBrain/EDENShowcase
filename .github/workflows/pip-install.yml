@@ -27,6 +27,10 @@ jobs:
       run: |
         pip install eden-simulator
 
+    - name: Run EDEN example directly
+      run: |
+        cd NeuroML2
+        python run_eden.py
         
     - name: Final version info
       run: |
