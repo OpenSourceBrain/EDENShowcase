@@ -4,4 +4,6 @@
 
 Repository for testing the [EDEN simulator](https://gitlab.com/c7859/neurocomputing-lab/Inferior_OliveEMC/eden) with NeuroML, OSB, notebooks, etc. 
 
-See also: https://docs.neuroml.org/Userdocs/Software/Tools/EDEN.html.
+See also: https://docs.neuroml.org/Userdocs/Software/Tools/EDEN.html for more details.
+
+

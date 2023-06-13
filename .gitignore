@@ -5,3 +5,4 @@
 *.mod
 x86_64
 *_nrn.py
+arm64
