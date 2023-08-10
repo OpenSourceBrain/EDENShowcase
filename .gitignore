@@ -6,3 +6,5 @@
 x86_64
 *_nrn.py
 arm64
+/NeuroML2/hhcell.hoc
+/NeuroML2/report.*.txt
