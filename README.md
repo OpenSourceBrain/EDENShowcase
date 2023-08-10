@@ -1,4 +1,4 @@
-# EDENShowcase
+# EDEN Showcase
 
 [![Continuous builds](https://github.com/OpenSourceBrain/EDENShowcase/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/EDENShowcase/actions/workflows/omv-ci.yml) [![Pip install EDEN](https://github.com/OpenSourceBrain/EDENShowcase/actions/workflows/pip-install.yml/badge.svg)](https://github.com/OpenSourceBrain/EDENShowcase/actions/workflows/pip-install.yml)
 
