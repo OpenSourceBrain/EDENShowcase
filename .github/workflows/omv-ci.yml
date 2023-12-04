@@ -14,10 +14,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.9 ]
         runs-on: [ ubuntu-latest, macos-latest,  macos-11 ]
-        engine: [ jNeuroML, jNeuroML_NEURON, jNeuroML_EDEN, jNeuroML_validate, EDEN, "EDEN:0.2.0", "EDEN:0.2.3" ]
-
+        engine: [ jNeuroML, jNeuroML_NEURON, jNeuroML_EDEN, jNeuroML_validate, "EDEN:0.2.0", "EDEN:0.2.2", "EDEN:0.2.3" ]
+        python-version: [ 3.9 ]
+        
     steps:
     - uses: actions/checkout@v3
     
