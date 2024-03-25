@@ -39,3 +39,4 @@ jobs:
       run: |
         omv list -V # list installed engines
         pip list
+        env
