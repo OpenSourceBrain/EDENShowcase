@@ -14,9 +14,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.9 ]
-        runs-on: [ ubuntu-latest, macos-latest,  macos-11 ]
         engine: [ jNeuroML, jNeuroML_NEURON, jNeuroML_EDEN, "jNeuroML_EDEN:0.2.2", jNeuroML_validate, EDEN, "EDEN:0.2.1"]
+        runs-on: [ ubuntu-latest, macos-latest,  macos-11 ]
+        python-version: [ 3.9 ]
 
     steps:
     - uses: actions/checkout@v3
