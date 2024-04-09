@@ -14,4 +14,4 @@ experiments:
         spike detection:
           method: threshold
           threshold: 0
-        tolerance: 0.000
+        tolerance: 3.667537832120739e-08  # due to slight difference on mac/linux of eden...
