@@ -14,15 +14,24 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        engine: [ jNeuroML, jNeuroML_NEURON, jNeuroML_EDEN, "jNeuroML_EDEN:0.2.2", jNeuroML_validate, EDEN, "EDEN:0.2.1"]
-        runs-on: [ ubuntu-latest, macos-latest,  macos-11 ]
-        python-version: [ 3.9 ]
+        runs-on: [ ubuntu-latest, macos-14 ]
+        engine:
+            - jNeuroML
+            - jNeuroML_NEURON
+            - jNeuroML_EDEN
+            - "jNeuroML_EDEN:0.2.3"
+            - jNeuroML_validate
+            - "EDEN:0.2.0"
+            - "EDEN:0.2.2"
+            - "EDEN:0.2.3"
 
+        python-version: [ "3.10" ]
+        
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python  ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version:  ${{ matrix.python-version }}
         
@@ -39,3 +48,4 @@ jobs:
       run: |
         omv list -V # list installed engines
         pip list
+        env
