@@ -18,7 +18,8 @@ jobs:
         engine:
             - jNeuroML
             - jNeuroML_NEURON
-            - jNeuroML_EDEN
+            - "jNeuroML_EDEN:0.2.1"
+            - "jNeuroML_EDEN:0.2.2"
             - "jNeuroML_EDEN:0.2.3"
             - jNeuroML_validate
             - "EDEN:0.2.0"
