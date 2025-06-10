@@ -2,9 +2,9 @@ name: Continuous builds
 
 on:
   push:
-    branches: [ main, development, experimental ]
+    branches: [ main, development, experimental, test* ]
   pull_request:
-    branches: [ main, development, experimental ]
+    branches: [ main, development, experimental, test* ]
 
 jobs:
   build:
@@ -14,11 +14,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runs-on: [ ubuntu-latest, ubuntu-22.04, macos-14 ]
+        runs-on: [ ubuntu-22.04, macos-14 ]
         engine:
             - jNeuroML
             - jNeuroML_NEURON
-            - jNeuroML_EDEN
+            - "jNeuroML_EDEN:0.2.1"
+            - "jNeuroML_EDEN:0.2.2"
             - "jNeuroML_EDEN:0.2.3"
             - jNeuroML_validate
             - "EDEN:0.2.0"
