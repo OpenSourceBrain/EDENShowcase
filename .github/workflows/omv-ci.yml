@@ -26,7 +26,7 @@ jobs:
             - "EDEN:0.2.2"
             - "EDEN:0.2.3"
 
-        python-version: [ "3.10" ]
+        python-version: [ "3.12" ]
         
     steps:
     - uses: actions/checkout@v4
