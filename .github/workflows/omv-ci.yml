@@ -39,6 +39,8 @@ jobs:
     - name: Install OMV
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+
+        pip install setuptools --upgrade # needed for eden on Python 3.12
         
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
