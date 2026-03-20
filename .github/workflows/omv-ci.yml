@@ -38,8 +38,8 @@ jobs:
         
     - name: Install OMV
       run: |
-        pip install setuptools --upgrade # needed for eden on Python 3.12
-        
+        pip install setuptools==80 # needed for eden on Python 3.12...
+
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
 
         
