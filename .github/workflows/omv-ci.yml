@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runs-on: [ ubuntu-22.04, macos-14 ]
+        runs-on: [ ubuntu-22.04] #, macos-14 
         engine:
             - jNeuroML
             - jNeuroML_NEURON
@@ -26,7 +26,7 @@ jobs:
             - "EDEN:0.2.2"
             - "EDEN:0.2.3"
 
-        python-version: [ "3.12" ]
+        python-version: [ "3.11", "3.12" ]
         
     steps:
     - uses: actions/checkout@v6
@@ -38,9 +38,10 @@ jobs:
         
     - name: Install OMV
       run: |
+        pip install setuptools --upgrade # needed for eden on Python 3.12
+        
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
 
-        pip install setuptools --upgrade # needed for eden on Python 3.12
         
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
