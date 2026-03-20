@@ -25,7 +25,7 @@ jobs:
         
     - name: Install EDEN using pip
       run: |
-        pip install setuptools --upgrade # needed for Python 3.12
+        pip install setuptools==80 # needed for Python 3.12
         pip install eden-simulator
 
     - name: Run EDEN example directly
